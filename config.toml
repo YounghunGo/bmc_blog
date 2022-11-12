@@ -12,14 +12,14 @@ enableRobotsTXT = true
 
 [languages]
   [languages.en]
-    title = "Ananke"
+    title = "벧엘선교교회"
     weight = 1
     contentDir = "content/en"
     # languageDirection = 'rtl' for Right-To-Left languages
   [languages.fr]
-    title = "Ananke Fr"
+    title = "벧엘선교교회"
     weight = 2
-    contentDir = "content/fr"
+
 
 [sitemap]
   changefreq = "monthly"
@@ -36,6 +36,4 @@ enableRobotsTXT = true
   background_color_class = "bg-white"
   recent_posts_number = 3
 
-[[params.ananke_socials]]
-name = "twitter"
-url = "https://twitter.com/GoHugoIO"
+
