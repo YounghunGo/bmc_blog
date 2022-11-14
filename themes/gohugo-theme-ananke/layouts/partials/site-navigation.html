@@ -19,7 +19,7 @@
     </a>
        <div class="el1">
       교회소개
-    </div> 
+       </div> 
     <div class="el2"> 
       섬기는 사람들 
     </div>
@@ -29,13 +29,11 @@
     <div class="el4"> 
       오시는 길
     </div>
-  
     <i class="fa-solid fa-bars"></i> <!--메뉴바-->
     <div class="flex-l items-center">
-      {{ partial "i18nlist.html" . }}
+      <!--{{ partial "i18nlist.html" . }}-->
       {{ if .Site.Menus.main }}
         <ul class="{{ cond (eq $.Site.Language.LanguageDirection "rtl") "pr0 ml3" "pl0 mr3" }}">
-          안녕하세요
           {{ range .Site.Menus.main }}
           <li class="list f5 f4-ns fw4 dib {{ cond (eq $.Site.Language.LanguageDirection "rtl") "pl3" "pr3" }}">
             <a class="hover-white no-underline white-90" href="{{ .URL }}" title="{{ i18n "pageTitle" . }}">
