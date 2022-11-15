@@ -2,7 +2,6 @@
 <html lang="{{ site.LanguageCode | default "en" }}" {{- with partialCached "func/GetLanguageDirection" "GetLanguageDirection" }} dir="{{ . }}" {{- end }}>
   <head>
     <script src="https://kit.fontawesome.com/81a1556a80.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/main.js"> </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     {{/* NOTE: the Site's title, and if there is a page title, that is set too */}}
@@ -50,5 +49,12 @@
       {{ block "main" . }}{{ end }}
     </main>
     {{ block "footer" . }}{{ partialCached "site-footer.html" . }}{{ end }}
+    <script>
+      const bars = document.querySelector(".fa-bars");
+      const menu = document.querySelector(".menu");
+      bars.addEventListener("click", () => {
+      menu.classList.toggle("active");
+         });
+    </script>
   </body>
 </html>
